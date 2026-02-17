@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Daily Calorie Calculator</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="calculator.html">Calorie Calculator</a>
+</nav>
+
+<section class="content">
+    <h2>Calculate Your Calories</h2>
+
+    <label>Calories per serving:</label>
+    <input type="number" id="calories">
+
+    <label>Number of servings:</label>
+    <input type="number" id="servings">
+
+    <button onclick="calculateCalories()">Calculate</button>
+
+    <h3 id="result"></h3>
+
+    <hr>
+
+    <h2>Feedback</h2>
+    <label>Rate this website:</label>
+    <select id="rating">
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Fair</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Very Good</option>
+        <option value="5">5 - Excellent</option>
+    </select>
+
+    <br><br>
+
+    <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+    <br><br>
+    <button onclick="submitFeedback()">Submit</button>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 Food Calories Monitoring</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
